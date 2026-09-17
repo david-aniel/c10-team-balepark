@@ -43,11 +43,11 @@ Model outputs are evaluated on a held-out split of the training set (never seen 
 ### ▶️ Reproduction
 Install dependencies: pip install -q "trl<0.12.0" "transformers<4.46.0" peft accelerate datasets
 
-Load data and resolve paths (scripts/Agriculture & Climate SLM script — handles both local and Kaggle-style input mounting).
+Run scripts/balepark-s-agriculture-climate-slm.ipynb — handles both local and Kaggle-style input mounting and training pipeline.
 
-To run the training sweep, uncomment the training sweep code cell (scripts/Agriculture & Climate SLM script) to compare hyperparameter configurations via holdout Levenshtein score.
+To run the training sweep, uncomment the training sweep code cell in scripts/balepark-s-agriculture-climate-slm.ipynb to compare hyperparameter configurations via holdout Levenshtein score.
 
-Train the final model with the best configuration and generate predictions (scripts/Agriculture & Climate SLM script).
+Train the final model with the best configuration and generate predictions commenting the training sweep cell again.
 
 Outputs are validated (column names, row count, ID alignment, no missing answers) before being written as the final result.
 
@@ -71,7 +71,7 @@ C10-team-balepark/
 
 ├── scripts/
 
-    └── Agriculture & Climate SLM script
+    └── balepark-s-agriculture-climate-slm.ipynb
 
 ├── data/
 
