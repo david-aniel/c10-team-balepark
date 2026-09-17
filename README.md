@@ -45,7 +45,7 @@ Install dependencies: pip install -q "trl<0.12.0" "transformers<4.46.0" peft acc
 
 Run scripts/balepark-s-agriculture-climate-slm.ipynb — handles both local and Kaggle-style input mounting and training pipeline.
 
-To run the training sweep, uncomment the training sweep code cell in scripts/balepark-s-agriculture-climate-slm.ipynb to compare hyperparameter configurations via holdout Levenshtein score.
+To run the training sweep, uncomment the training Get.Epoch N code cell in scripts/balepark-s-agriculture-climate-slm.ipynb to compare hyperparameter configurations via holdout Levenshtein score.
 
 Train the final model with the best configuration and generate predictions commenting the training sweep cell again.
 
@@ -53,31 +53,30 @@ Outputs are validated (column names, row count, ID alignment, no missing answers
 
 This project is currently notebook-based (developed and run as a Kaggle-style notebook); a standalone script/app deployment has not yet been built.
 
-📁 Repository Structure
+### 📁 Repository Structure
 
 C10-team-balepark/
 
 ├── README.md
 
 ├── docs/
-
     └── problem_statement.pdf
-
     └── data_card.pdf
-
     └── impact_statement_card.pdf
-
     └── stakeholder_engagement.pdf
 
 ├── scripts/
-
     └── balepark-s-agriculture-climate-slm.ipynb
 
 ├── data/
-
+    └── baseline_submission.csv
+    └── dataset-metadata.json
+    └── documents.csv
     └── new_documents_4.csv
-    
     └── new_train_qa_4.csv
+    └── sample_submission.csv
+    └── test_questions.csv
+    └── train_qa.cvs
     
 ### 👥 Appendix — Contributors
 
