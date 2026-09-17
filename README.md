@@ -1,4 +1,4 @@
-# c10-balepark
+# c10-team-balepark
 AgriAdviser-NG
 
 ### 🌾 Project Overview
